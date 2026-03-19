@@ -713,3 +713,13 @@ canvas {
     grid-template-columns: 1fr;
   }
 }
+
+.dialog-body a {
+  color: var(--color-text);
+  text-underline-offset: 0.2em;
+}
+
+.dialog-body a:hover {
+  font-style: italic;
+  font-weight: 900;
+}
