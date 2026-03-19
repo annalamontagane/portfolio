@@ -9,13 +9,13 @@
 const PX = 8;
 
 const BANDS = [
-  { lo: 0.00, hi: 0.42, r: 250, g: 255, b: 236, glyph: 'none'  },
-  { lo: 0.42, hi: 0.55, r: 250, g: 255, b: 236, glyph: 'bit'   },
-  { lo: 0.55, hi: 0.67, r: 243, g: 191, b: 236, glyph: 'none'  },
-  { lo: 0.67, hi: 0.74, r: 175, g: 220, b: 251, glyph: 'cross' },
-  { lo: 0.74, hi: 0.80, r: 175, g: 220, b: 251, glyph: 'bit'   },
-  { lo: 0.80, hi: 0.91, r: 130, g:  43, b:  51, glyph: 'none'  },
-  { lo: 0.91, hi: 1.00, r: 130, g:  43, b:  51, glyph: 'dot'   },
+  { lo: 0.00, hi: 0.58, r: 250, g: 255, b: 236, glyph: 'none'  },
+  { lo: 0.58, hi: 0.64, r: 250, g: 255, b: 236, glyph: 'bit'   },
+  { lo: 0.64, hi: 0.69, r: 243, g: 191, b: 236, glyph: 'none'  },
+  { lo: 0.69, hi: 0.72, r: 175, g: 220, b: 251, glyph: 'cross' },
+  { lo: 0.72, hi: 0.76, r: 175, g: 220, b: 251, glyph: 'bit'   },
+  { lo: 0.76, hi: 0.90, r: 130, g:  43, b:  51, glyph: 'none'  },
+  { lo: 0.90, hi: 1.00, r: 130, g:  43, b:  51, glyph: 'dot'   },
 ];
 
 let COLS, ROWS;
@@ -235,7 +235,7 @@ function renderGrid() {
 
       if (zone === 'remap') {
         const isCrimson = band.r === 130 && band.g === 43 && band.b === 51;
-        fill(isCrimson ? 175 : band.r, isCrimson ? 220 : band.g, isCrimson ? 251 : band.b, 190);
+        fill(isCrimson ? 175 : band.r, isCrimson ? 220 : band.g, isCrimson ? 251 : band.b, 153);
       } else {
         fill(band.r, band.g, band.b);
       }
